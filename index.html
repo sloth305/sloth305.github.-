@@ -27,6 +27,7 @@
 
         strong {
             font-weight: bold; /* 텍스트를 진하게 표시 */
+            cursor: pointer; /* 커서를 포인터로 변경하여 클릭 가능하도록 설정 */
         }
     </style>
 </head>
@@ -38,6 +39,23 @@
     <p><strong>고인:</strong>  故임양택(향년99세)</p>
     <p><strong>상주:</strong>  동생  임진택</p>
     <p><strong>별세:</strong>  2103년 12월 12일 (금) 12시 00분</p>
-    <!-- 여기에 추가적인 텍스트나 내용을 넣을 수 있습니다. -->
+    <p><strong>장지:</strong>  미정</p>
+    <p><strong>부고 보내기: </strong>임진택 농협 <span id="phoneNumber">302-132098-3791</span> </p>
+    <!-- JavaScript로 클릭 시 복사 기능을 추가 -->
+    <script>
+        const phoneNumber = document.getElementById("phoneNumber");
+        phoneNumber.style.color = "blue";
+        phoneNumber.style.textDecoration = "underline";
+        phoneNumber.style.cursor = "pointer";
+        phoneNumber.addEventListener("click", function () {
+            const tempInput = document.createElement("input");
+            tempInput.value = "3021320983791";
+            document.body.appendChild(tempInput);
+            tempInput.select();
+            document.execCommand("copy");
+            document.body.removeChild(tempInput);
+            alert("계좌번호가  복사되었습니다.");
+        });
+    </script>
 </body>
 </html>
