@@ -13,14 +13,14 @@
         }
 
         img {
-            max-width: 140%; /* 이미지가 화면의 75% 크기로 조절 (1.5배 확대) */
+            max-width: 150%; /* 이미지가 화면의 75% 크기로 조절 (1.5배 확대) */
             max-height: auto; /* 이미지의 높이 자동 조절 */
         }
 
         p {
             background-color: rgba(255, 255, 255, 0.7);
             padding: 10px;
-            font-size: 2.8em; /* 글자 크기를 1.5배로 키우기 */
+            font-size: 2.5em; /* 글자 크기를 1.5배로 키우기 */
             text-align: left; /* 가운데 정렬 제거 */
             margin-top: 10px; /* 6줄 정도의 여백 추가 */
         }
@@ -37,12 +37,12 @@
     <br>
     <p><strong>고인:</strong>  故임양택(향년67세)</p>
     <p><strong>상주:</strong>  동생  임진택</p>
-    <p><strong>별세:</strong>  2103년 11월 9일 (금) 12시 00분</p>
-    <p><strong>발인:</strong>  2103년 11월 12일 (금) 12시 00분</p>
-    <p><strong>장지:</strong>  미정</p>
+    <p><strong>별세:</strong>  2103년 11월 9일 (목) 18시 15분</p>
+    <p><strong>발인:</strong>  2103년 11월 11일 (토)</p>
+    <p><strong>장지:</strong>  선산</p>
     <p><strong>연락처:</strong>  임진택 010-7357-1440</p>
     <p>&emsp;&emsp;김미정 010-9628-3515</p>
-    <p><strong>부고 보내기: </strong>임진택 농협 <span id="phoneNumber">302-132098-3791</span> </p>
+    <p><strong>부고 보내기: </strong>임진택 카카오뱅크<span id="phoneNumber">3333-21-3279586</span> </p>
     <!-- JavaScript로 클릭 시 복사 기능을 추가 -->
     <script>
         const phoneNumber = document.getElementById("phoneNumber");
@@ -51,7 +51,7 @@
         phoneNumber.style.cursor = "pointer";
         phoneNumber.addEventListener("click", function () {
             const tempInput = document.createElement("input");
-            tempInput.value = "3021320983791";
+            tempInput.value = "3333213279586";
             document.body.appendChild(tempInput);
             tempInput.select();
             document.execCommand("copy");
